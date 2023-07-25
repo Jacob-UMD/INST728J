@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head><title>Reference Request</title></head>
+<style>
+    body {
+        background-color:cornsilk;
+        text-align:left;
+         
+    }
+    
+    header {
+        background-color:burlywood;
+        
+    }
+    
+    h1, h2 {
+        color:darkgreen;
+        text-align:center;
+    }
+    
+    h1 {
+        padding-top: 10px;
+    }
+    
+    h2 {
+        padding-bottom: 10px;
+    }
+        
+    p {
+        color:gray;
+    }
+    
+    div {
+        padding-bottom: 15px;
+        padding-left:240px;
+    }
+</style>       
+<header>
+    <h1>Mead Memorial Library</h1>
+    <h2> REFERENCE REQUEST</h2> 
+</header>
+<body>           
+    
+        <form name="ReferenceRequest" method="post" action="Reference_Request_Thank_You.html">
+            <div>
+                <label for="name">Patron Name:</label><br>            
+                <input type="text" placeholder="John Smith" name="name" required>
+            </div>
+            <div>
+                <label for="librarycard">Library Card Number:</label><br>            
+                <input type="number" min="1000" max="9999" placeholder="1234" name="librarycard" required>
+            </div>
+            <div>
+                <label for="email">Email Address:</label><br>
+                <input type="email" placeholder="john.smith@mml.org" name="email" required>
+            </div>
+            <div>
+                <label for="subject">Subject of Request:</label> <br>
+                <input type="text" placeholder="Please insert the subject of your request here." name="subject" size="50" required>
+            </div>
+            <div>
+                <label for="details">Details of  Request:</label><br>
+                <textarea rows="10" cols="50" name="details" placeholder="Please describe your request in as much detail as possible." required></textarea>
+            </div>
+            <div>
+                <label for="date">Date Needed By:</label><br>
+                <input type="date" name="date" required>
+                <p>(Please allow at least five business days for request completion)</p>  
+            </div>
+            <div>
+                <input type="submit" Value="Submit">
+            </div>
+        
+        </form>
+        
+    
+
+</body>
+</html>
