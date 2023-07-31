@@ -2,46 +2,115 @@
 <html>
 <head><title>Reference Request</title></head>
 <style>
-    body {
+    
+    #container {
         background-color:cornsilk;
-        text-align:left;
-         
+        width: 100%;
+        height: 100%;
+        margin: auto;
     }
     
-    header {
+    #header {
         background-color:burlywood;
-        
-    }
-    
-    h1, h2 {
         color:darkgreen;
         text-align:center;
+        width: 100%;
+        margin: auto;
+        border: solid 4px #6E260E;
     }
     
-    h1 {
+    #header h1 {
         padding-top: 10px;
     }
     
-    h2 {
-        padding-bottom: 10px;
+    nav {
+        border-top: solid 3px #6E260E;
     }
-        
-    p {
+    
+    nav ul li {
+        list-style-type: none;
+        display: inline-block;
+        padding-right: 50px;
+    }
+    
+    nav a {
+        display: block;
+        text-decoration: none;
+        color: darkgreen;
+    }
+    
+    nav a:hover {
+        color:hotpink;
+    }
+    
+    #form {
+        margin:auto;
+        text-align:left;
+        padding: 15px 0px;
+        width: 80%;
+        float:right;
+    }
+    
+    #form label {
+        padding-top: 15px;
+    }
+    
+    #form p {
         color:gray;
     }
     
-    div {
-        padding-bottom: 15px;
-        padding-left:240px;
+    #events {
+        float:left;
+        height: auto;
+        width: 17%;
+        background-color: sandybrown;
+        text-align:center;
+        border-left: 3px solid #6E260E;
+        border-right: 3px solid #6E260E
     }
-</style>       
-<header>
-    <h1>Mead Memorial Library</h1>
-    <h2> REFERENCE REQUEST</h2> 
-</header>
-<body>           
     
-        <form name="ReferenceRequest" method="post" action="Reference_Request_Thank_You.html">
+    #events h3{
+        color: darkgreen;
+        border-bottom: 3px solid #6E260E;
+        padding-bottom:2px;
+    }
+    
+    #events table td {
+        padding: 0px 10px 15px 30px;
+        text-align: center;
+    }
+    
+    #footer {
+        clear: both;
+        width: 100%;
+        background-color: #6E260E;
+        color: darkgreen;
+        text-align: center;
+        padding: 10px 0px;
+    }
+    
+</style>       
+
+<body>
+    <div id="container">
+        <div id="header">
+            <header>
+                <h1>Mead Memorial Library</h1>
+                <h2>REFERENCE REQUEST</h2>
+            </header>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Home </a></li>
+                    <li><a href="#">Reference Request </a></li>
+                    <li><a href="#">New Titles </a></li>
+                
+                </ul>
+                
+            </nav>
+        </div>
+        <form id="form" name="ReferenceRequest" method="post" action="Reference_Request_Thank_You.html">
+
             <div>
                 <label for="name">Patron Name:</label><br>            
                 <input type="text" placeholder="John Smith" name="name" required>
@@ -70,10 +139,23 @@
             <div>
                 <input type="submit" Value="Submit">
             </div>
-        
-        </form>
-        
-    
 
+        </form>
+        <div id="events">
+            <aside>
+                <div><h3>Upcoming Events</h3></div>
+                <table>
+                    <tr>
+                        <td>7/29</td>
+                        <td>Reptile Meet-and-Greet<br><i>led by Wallace</i></td>
+                    </tr>
+                </table>
+            </aside>
+        </div>
+        <div id="footer">
+            <footer>As this is a fake library, there are no rights reserved. Please use freely.</footer>
+        </div>
+    
+    </div>
 </body>
 </html>
