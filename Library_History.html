@@ -2,47 +2,124 @@
 <html>
 <head><title>Library History</title></head>
 <style>
-    body {
+    
+    #container {
         background-color:cornsilk;
         text-align:justify;
-        
+        width:100%;
+        height:100%;
+        font-family: Garamond, Times, serif;
     }
     
-    header {
-        background-color:burlywood;
-        
-    }
-    
-    h1, h2 {
+    #header {
+        background-color:burlywood; 
         color:darkgreen;
         text-align:center;
+        margin: auto;
+        border: solid 4px #6E260E;
     }
     
-    h1 {
-        padding-top: 10px;
+    #header h1 h2 {
+        padding: 10px 0px;
     }
     
-    h2 {
-        padding-bottom: 10px;
+    nav {
+        border-top: solid 3px #6E260E;
     }
     
-    h3, p {
-        padding-left:240px;
-        padding-right:240px;
+    nav ul li {
+        list-style-type: none;
+        display: inline-block;
+        padding-right: 50px;
     }
-        
+    
+    nav a {
+        display: block;
+        text-decoration: none;
+        color: darkgreen;
+    }
+    
+    nav a:hover {
+        color:hotpink;
+    }
+    
+    #main {
+        width: 75%;
+        height:100$;
+        float:right;
+        padding-right: 50px;
+    }
+    
+    #events {
+        float:left;
+        height: auto;
+        width: auto;
+        background-color: sandybrown;
+        text-align:center;
+        border-left: 3px solid #6E260E;
+        border-right: 3px solid #6E260E
+    }
+    
+    #events h3{
+        color: darkgreen;
+        border-bottom: 3px solid #6E260E;
+        padding-bottom:2px;
+    }
+    
+    #events table td {
+        padding: 0px 10px 15px 30px;
+        text-align: center;
+    }
+    
+    #footer {
+        clear: both;
+        width: 100%;
+        background-color: #6E260E;
+        color: darkgreen;
+        text-align: center;
+        padding: 10px 0px;
+    }
 
 </style>       
-<header>
-    <h1>Mead Memorial Library</h1>
-    <h2>HISTORY OF THE LIBRARY</h2> 
-</header>
 <body>
-    <h3>Founding</h3>
-    <p>The Mead Memorial Library was founded in 2021 in the Columbia Heights neighborhood of Washington, DC. The namesake of the library, Mead the Cat, is the pet of library founder, Jacob Sheldon, and is a local feature in the community.</p>
-    <p>Before moving into his current residence in the library, Mead could often be found meowing next to the local Little Free Libraries, encouraging the neighborhood children to take home a free book. So, when it came time to name the neighborhood library, there was no better candidate than the neighborhood's local feline champion for literacy.</p>
-    <hr>
-
-
+    <div id="container">
+        <div id="header">
+            <header>
+                <h1>Mead Memorial Library</h1>
+                <h2>HISTORY OF THE LIBRARY</h2> 
+            </header>
+            <nav>
+                <ul>
+                    <li><a href="#">Home </a></li>
+                    <li><a href="Reference_Request.html">Reference Request </a></li>
+                    <li><a href="#">New Titles </a></li>
+                
+                </ul>
+            </nav>
+        </div>
+        
+        <div id="main">
+            <h3>Founding</h3>
+                <p>The Mead Memorial Library was founded in 2021 in the Columbia Heights neighborhood of Washington, DC. The namesake of the library, Mead the Cat, is the pet of library founder, Jacob Sheldon, and is a local feature in the community.</p>
+                <p>Before moving into his current residence in the library, Mead could often be found meowing next to the local Little Free Libraries, encouraging the neighborhood children to take home a free book. So, when it came time to name the neighborhood library, there was no better candidate than the neighborhood's local feline champion for literacy.</p> <hr>
+        </div>
+        
+        <div id="events">
+            <aside>
+                <div><h3>Upcoming Events</h3></div>
+                <table>
+                    <tr>
+                        <td>7/29</td>
+                        <td>Reptile Meet-and-Greet<br><i>led by Wallace</i></td>
+                    </tr>
+                </table>
+            </aside>
+        </div>
+        
+        <div id="footer">
+            <footer>As this is a fake library, there are no rights reserved. Please use freely.</footer>
+        </div>
+    </div>  
+    
 </body>
 </html>
