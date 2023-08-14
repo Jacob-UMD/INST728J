@@ -7,6 +7,7 @@ html, body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    background-color: cornsilk;
 }
 
 #container {
@@ -37,20 +38,46 @@ nav {
     border-top: solid 3px #6e260e;
 }
 
-nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding-right: 50px;
-}
-
 nav a {
     display: block;
     text-decoration: none;
     color: darkgreen;
 }
+nav  li { 
+    display: inline; 
+    position: relative; 
+    text-align:left;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 50px;
+    margin: auto;
+}
 
 nav a:hover {
     color: hotpink;
+}
+
+nav ul ul {
+    position:absolute;
+    left: 0;
+    top:100%;
+    background:burlywood;
+    min-width: 125px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: none;
+    padding: 0;
+    padding-left: 15px;
+}
+
+nav ul ul li {
+    padding: 10px;
+}
+
+li:hover > ul {
+    display: block;
 }
 
 #titles {
