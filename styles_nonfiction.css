@@ -37,22 +37,39 @@ nav {
     border-top: solid 3px #6e260e;
 }
 
+nav a {
+    display: block;
+    text-decoration: none;
+    color: darkgreen;
+}
+nav  li { 
+    display: inline; 
+    position: relative; 
+}
+
 nav ul li {
     list-style-type: none;
     display: inline-block;
     padding-right: 50px;
 }
 
-nav a {
-    display: block;
-    text-decoration: none;
-    color: darkgreen;
-}
-
 nav a:hover {
     color: hotpink;
 }
 
+nav ul ul {
+    position:absolute;
+    left: 0;
+    top:100%;
+    background:burlywood;
+    border:solid 3px #6e260e;
+    border-top:none;
+     display: none;
+}
+
+li:hover > ul {
+    display: block;
+}
 #titles {
     background-color: cornsilk;
     height: 100%;
