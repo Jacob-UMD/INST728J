@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
 
+
 }
 
 html, body {
@@ -80,10 +81,23 @@ li:hover > ul {
     display: block;
 }
 
+
+#events {
+    float: left;
+    height: 100%;
+    width: auto;
+    background-color: sandybrown;
+    text-align: center;
+    border-left: 3px solid #6e260e;
+    border-right: 3px solid #6e260e;
+    padding-bottom: 1015px;
+}
+
 #titles {
     background-color: cornsilk;
     height: 100%;
-    width: 83%;
+    width: auto;
+    max-width: 78%;
     float: right;
     padding: 10px;
     display: flex;
@@ -103,17 +117,6 @@ li:hover > ul {
     object-fit: cover;
 }
 
-
-#events {
-    float: left;
-    height: 100%;
-    width: auto;
-    background-color: sandybrown;
-    text-align: center;
-    border-left: 3px solid #6e260e;
-    border-right: 3px solid #6e260e;
-    padding-bottom: 1015px;
-}
 
 #events h3 {
     color: darkgreen;
