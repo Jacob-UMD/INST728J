@@ -7,6 +7,7 @@ html, body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    background-color: cornsilk;
 }
 
 #container {
@@ -45,12 +46,14 @@ nav a {
 nav  li { 
     display: inline; 
     position: relative; 
+    text-align:left;
 }
 
 nav ul li {
     list-style-type: none;
     display: inline-block;
     padding-right: 50px;
+    margin: auto;
 }
 
 nav a:hover {
@@ -62,14 +65,21 @@ nav ul ul {
     left: 0;
     top:100%;
     background:burlywood;
-    border:solid 3px #6e260e;
-    border-top:none;
-     display: none;
+    min-width: 125px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: none;
+    padding: 0;
+    padding-left: 15px;
+}
+
+nav ul ul li {
+    padding: 10px;
 }
 
 li:hover > ul {
     display: block;
 }
+
 #titles {
     background-color: cornsilk;
     height: 100%;
@@ -82,7 +92,7 @@ li:hover > ul {
     justify-content: center;
     align-items: center;
     gap: 16px;
-    padding-bottom: 125px;
+    padding-bottom: 1000px;
     margin: auto;
 }
 
@@ -102,7 +112,7 @@ li:hover > ul {
     text-align: center;
     border-left: 3px solid #6e260e;
     border-right: 3px solid #6e260e;
-    padding-bottom: 125px;
+    padding-bottom: 1015px;
 }
 
 #events h3 {
