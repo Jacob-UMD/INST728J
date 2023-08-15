@@ -1,12 +1,14 @@
 * {
     box-sizing: border-box;
 
+
 }
 
 html, body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    background-color: cornsilk;
 }
 
 #container {
@@ -37,43 +39,46 @@ nav {
     border-top: solid 3px #6e260e;
 }
 
-nav ul li {
-    list-style-type: none;
-    display: inline-block;
-    padding-right: 50px;
-}
-
 nav a {
     display: block;
     text-decoration: none;
     color: darkgreen;
+}
+nav  li { 
+    display: inline; 
+    position: relative; 
+    text-align:left;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding-right: 50px;
+    margin: auto;
 }
 
 nav a:hover {
     color: hotpink;
 }
 
-#titles {
-    background-color: cornsilk;
-    height: 100%;
-    width: 83%;
-    float: right;
-    padding: 10px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 16px;
-    padding-bottom: 125px;
-    margin: auto;
+nav ul ul {
+    position:absolute;
+    left: 0;
+    top:100%;
+    background:burlywood;
+    min-width: 125px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    display: none;
+    padding: 0;
+    padding-left: 15px;
 }
 
-#titles img {
-    width: 100%;
-    max-width: 200px;
-    height: 300px;
-    object-fit: cover;
+nav ul ul li {
+    padding: 10px;
+}
+
+li:hover > ul {
+    display: block;
 }
 
 
@@ -85,8 +90,33 @@ nav a:hover {
     text-align: center;
     border-left: 3px solid #6e260e;
     border-right: 3px solid #6e260e;
-    padding-bottom: 125px;
+    padding-bottom: 1015px;
 }
+
+#titles {
+    background-color: cornsilk;
+    height: 100%;
+    width: auto;
+    max-width: 78%;
+    float: right;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    padding-bottom: 1000px;
+    margin: auto;
+}
+
+#titles img {
+    width: 100%;
+    max-width: 200px;
+    height: 300px;
+    object-fit: cover;
+}
+
 
 #events h3 {
     color: darkgreen;
